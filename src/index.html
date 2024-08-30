@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>battleship</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Battleship Game</h1>
+    <h2>Your Board</h2>
+    <div id="player-board"></div>
+    <h2>Computer's Board</h2>
+    <div id="computer-board"></div>
+    <h2>Place Your Ships</h2>
+    <form id="ship-placement-form">
+      <label for="length">Ship Length:</label>
+      <input type="number" id="length" name="length" min="1" max="5" required />
+      <label for="x">X Coordinate:</label>
+      <input type="number" id="x" name="x" min="0" max="9" required />
+      <label for="y">Y Coordinate:</label>
+      <input type="number" id="y" name="y" min="0" max="9" required />
+      <button type="submit">Place Ship</button>
+    </form>
+    <button id="attack-button">Attack</button>
+  </body>
+</html>

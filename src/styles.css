@@ -1,0 +1,22 @@
+.cell {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #000;
+  display: inline-block;
+  box-sizing: border-box;
+}
+
+.ship {
+  background-color: gray;
+}
+
+.missed-shot {
+  background-color: blue;
+}
+
+#player-board,
+#computer-board {
+  display: grid;
+  grid-template-columns: repeat(10, 30px);
+  grid-gap: 1px;
+}
